@@ -36,7 +36,7 @@ function Dashboard({ applications, onStatusUpdate, onClose }) {
         boxShadow: '0 20px 60px rgba(0,0,0,0.3)'
       }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-          <h2 style={{ margin: 0, fontSize: '22px' }}>📋 My Applications</h2>
+         <h2 style={{ margin: 0, fontSize: '22px', fontWeight: '800', color: '#111827' }}>📋 My Applications</h2>
           <button
             onClick={onClose}
             style={{
