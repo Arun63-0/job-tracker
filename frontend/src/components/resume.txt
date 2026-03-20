@@ -1,0 +1,13 @@
+John Doe
+Software Developer
+
+SKILLS:
+React, JavaScript, Node.js, Python, CSS, HTML
+
+EXPERIENCE:
+2 years of frontend development using React and JavaScript
+Built REST APIs using Node.js
+Worked with MongoDB and SQL databases
+
+EDUCATION:
+B.Tech Computer Science 2022
