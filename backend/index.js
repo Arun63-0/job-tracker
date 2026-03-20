@@ -8,7 +8,7 @@ const assistantRoutes = require('./routes/assistant');
 
 // Register plugins
 fastify.register(cors, {
-  origin: 'http://localhost:5173'
+  origin: ['http://localhost:5173', 'https://job-tracker-weld-psi.vercel.app']
 });
 fastify.register(multipart);
 
