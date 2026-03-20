@@ -14,7 +14,7 @@ function ResumeUpload({ onUpload }) {
       const formData = new FormData();
       formData.append('file', file);
 
-      const res = await fetch('http://localhost:3000/api/resume/upload', {
+      const res = await fetch('https://job-tracker-rujx.onrender.com/api/resume/upload', {
         method: 'POST',
         body: formData
       });

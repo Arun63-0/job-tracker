@@ -17,7 +17,7 @@ function ChatBubble({ onFiltersUpdate }) {
     setLoading(true);
 
     try {
-      const res = await fetch('http://localhost:3000/api/assistant', {
+      const res = await fetch('https://job-tracker-rujx.onrender.com/api/assistant', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

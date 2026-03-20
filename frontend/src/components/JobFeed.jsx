@@ -34,7 +34,7 @@ function JobFeed() {
       if (filters.date) params.append('date', filters.date);
       if (filters.matchScore) params.append('matchScore', filters.matchScore);
 
-      const res = await fetch(`http://localhost:3000/api/jobs?${params}`);
+      const res = await fetch(`https://job-tracker-rujx.onrender.com/api/jobs?${params}`);
       const data = await res.json();
       setJobs(data.jobs);
     } catch (err) {
