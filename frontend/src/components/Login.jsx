@@ -55,7 +55,7 @@ function Login({ onLogin }) {
             type="email"
             value={email}
             onChange={e => setEmail(e.target.value)}
-            placeholder="test@gmail.com"
+            placeholder="Enter your email"
             style={{
               width: '100%',
               padding: '10px 14px',
@@ -76,7 +76,7 @@ function Login({ onLogin }) {
             type="password"
             value={password}
             onChange={e => setPassword(e.target.value)}
-            placeholder="test@123"
+            placeholder="Enter your password"
             onKeyDown={e => e.key === 'Enter' && handleLogin()}
             style={{
               width: '100%',
