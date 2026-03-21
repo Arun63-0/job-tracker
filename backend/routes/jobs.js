@@ -1,6 +1,7 @@
 const { scoreJobMatch } = require('../services/matching');
 
 const jobs = [
+  
   {
     id: 1,
     title: "Frontend Developer",
@@ -55,7 +56,118 @@ const jobs = [
     mode: "Hybrid",
     skills: ["Python", "PyTorch", "TensorFlow"],
     postedDate: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString()
+  },
+  {
+    id: 6,
+    title: "Full Stack Developer",
+    company: "Zomato",
+    location: "Bangalore",
+    description: "Build full stack web apps using React and Node.js.",
+    type: "Full-time",
+    mode: "Hybrid",
+    skills: ["React", "Node.js", "MongoDB"],
+    postedDate: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).toISOString()
+  },
+  {
+    id: 7,
+    title: "DevOps Engineer",
+    company: "Infosys",
+    location: "Pune",
+    description: "Manage cloud infrastructure using AWS and Docker.",
+    type: "Full-time",
+    mode: "On-site",
+    skills: ["AWS", "Docker", "Kubernetes"],
+    postedDate: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000).toISOString()
+  },
+  {
+    id: 8,
+    title: "Data Scientist",
+    company: "Razorpay",
+    location: "Bangalore",
+    description: "Analyze large datasets and build predictive models.",
+    type: "Full-time",
+    mode: "Remote",
+    skills: ["Python", "ML", "SQL"],
+    postedDate: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString()
+  },
+  {
+    id: 9,
+    title: "UI/UX Designer",
+    company: "Paytm",
+    location: "Noida",
+    description: "Design beautiful user interfaces for mobile and web apps.",
+    type: "Full-time",
+    mode: "Hybrid",
+    skills: ["Figma", "CSS", "JavaScript"],
+    postedDate: new Date(Date.now() - 6 * 24 * 60 * 60 * 1000).toISOString()
+  },
+  {
+    id: 10,
+    title: "React Developer",
+    company: "Freshworks",
+    location: "Chennai",
+    description: "Build modern web applications using React and Redux.",
+    type: "Full-time",
+    mode: "Remote",
+    skills: ["React", "Redux", "JavaScript"],
+    postedDate: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).toISOString()
+  },
+  {
+    id: 11,
+    title: "Node.js Developer",
+    company: "CRED",
+    location: "Bangalore",
+    description: "Build high performance APIs using Node.js and Express.",
+    type: "Full-time",
+    mode: "Hybrid",
+    skills: ["Node.js", "Express", "MongoDB"],
+    postedDate: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).toISOString()
+  },
+  {
+    id: 12,
+    title: "Android Developer",
+    company: "Ola",
+    location: "Bangalore",
+    description: "Build Android apps using Kotlin and Java.",
+    type: "Full-time",
+    mode: "On-site",
+    skills: ["Kotlin", "Java", "Android"],
+    postedDate: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString()
+  },
+  {
+    id: 13,
+    title: "iOS Developer",
+    company: "PhonePe",
+    location: "Bangalore",
+    description: "Build iOS apps using Swift and Objective-C.",
+    type: "Full-time",
+    mode: "Hybrid",
+    skills: ["Swift", "iOS", "Xcode"],
+    postedDate: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString()
+  },
+  {
+    id: 14,
+    title: "Cloud Architect",
+    company: "TCS",
+    location: "Mumbai",
+    description: "Design and implement cloud solutions using AWS and Azure.",
+    type: "Full-time",
+    mode: "Hybrid",
+    skills: ["AWS", "Azure", "Cloud"],
+    postedDate: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString()
+  },
+  {
+    id: 15,
+    title: "Frontend Intern",
+    company: "Meesho",
+    location: "Bangalore",
+    description: "Learn and build UI components using React.",
+    type: "Internship",
+    mode: "Remote",
+    skills: ["React", "JavaScript", "HTML"],
+    postedDate: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).toISOString()
   }
+
 ];
 
 global.resumeStore = global.resumeStore || { text: '', filename: '' };
