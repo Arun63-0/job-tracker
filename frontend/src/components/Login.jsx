@@ -120,21 +120,24 @@ function Login({ onLogin }) {
           {loading ? 'Signing in...' : 'Sign In'}
         </button>
 
-        <div style={{
-          marginTop: '24px',
-          padding: '16px',
-          backgroundColor: '#f0fdf4',
-          borderRadius: '8px',
-          border: '1px solid #bbf7d0'
-        }}>
-          <p style={{ margin: '0 0 4px 0', fontSize: '13px', color: '#15803d', fontWeight: '600' }}>
-            Test Credentials:
-          </p>
-          <p style={{ margin: '0', fontSize: '13px', color: '#15803d' }}>
-            Email: test@gmail.com<br />
-            Password: test@123
-          </p>
-        </div>
+        {error && (
+          <div style={{
+            marginTop: '24px',
+            padding: '16px',
+            backgroundColor: '#f0fdf4',
+            borderRadius: '8px',
+            border: '1px solid #bbf7d0'
+          }}>
+            <p style={{ margin: '0 0 4px 0', fontSize: '13px', color: '#15803d', fontWeight: '600' }}>
+              Test Credentials:
+            </p>
+            <p style={{ margin: '0', fontSize: '13px', color: '#15803d' }}>
+              Email: test@gmail.com<br />
+              Password: test@123
+            </p>
+          </div>
+        )}
+
       </div>
     </div>
   );
