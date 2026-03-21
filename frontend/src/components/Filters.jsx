@@ -26,13 +26,15 @@ function Filters({ filters, setFilters }) {
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
         <h2 style={{ margin: 0, fontSize: '22px', fontWeight: '800', color: '#111827' }}>🔍 Filter Jobs</h2>
         <button onClick={clearFilters} style={{
-          backgroundColor: '#f3f4f6',
-          border: 'none',
-          padding: '6px 14px',
-          borderRadius: '8px',
-          cursor: 'pointer',
-          fontSize: '13px'
-        }}>Clear All</button>
+  backgroundColor: '#f3f4f6',
+  border: 'none',
+  padding: '6px 14px',
+  borderRadius: '8px',
+  cursor: 'pointer',
+  fontSize: '13px',
+  fontWeight: '800',
+  color: '#111827'
+}}>Clear All</button>
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '12px' }}>
